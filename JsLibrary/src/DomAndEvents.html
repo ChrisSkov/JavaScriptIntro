@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<html>
+    <head>
+        <title>TODO supply a title</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    </head>
+    <body>
+        <script>
+              function colorDiv()
+              {
+                  document.getElementsByTagName("div").forEach(element => {
+                      element.style.backgroundColor = "blue";
+                  });
+              }
+              colorDiv();
+
+              function difColors()
+              {
+                  document.getElementById("div1").style.backgroundColor = "blue";
+                  document.getElementById("div2").style.backgroundColor = "green";
+                  document.getElementById("div3").style.backgroundColor = "red";
+              }
+        </script>
+        <div id="div1" > Green</div>
+        <div id="div2" > Red</div>
+        <div id="div3" > Blue</div>
+
+        <button onclick="difColors()">Click me</button>
+    </body>
+</html>
